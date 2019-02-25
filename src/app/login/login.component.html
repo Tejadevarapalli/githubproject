@@ -1,0 +1,8 @@
+<h2>Email</h2>
+<input type="email" [(ngModel)]="email" name="email">
+<h2>Password</h2>
+<input type="Password" [(ngModel)]="password" name="password">
+<button (click)="login()">Login</button>
+<h2>{{sMessage}}</h2>
+<h2>{{eMessage}}</h2>
+<button routerLink="/register">Register</button>

@@ -1,0 +1,12 @@
+<div class="row">
+  <h2>Email-id</h2>
+  <input type="text" [(ngModel)]="email" placeholder="Email-id" name="email">
+</div>
+<div class="row">
+  <h2>Password</h2>
+  <input type="password" [(ngModel)]="password" placeholder="password" name="password">
+</div>
+<p>{{successMessage}}</p>
+<p>{{errorMessage}}</p>
+<br>
+<button (click)="register()">Register</button>
