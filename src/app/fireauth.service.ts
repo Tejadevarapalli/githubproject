@@ -24,7 +24,13 @@ export class FireauthService {
       }, err => reject(err));
       });
   }
-
+  firesignout() {
+    return new Promise<any>((resolve, reject) => {
+      firebase.auth().signOut().then(res => {
+        resolve(res);
+      }, err => reject(err));
+    });
+  }
 }
 
 
